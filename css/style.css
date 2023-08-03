@@ -1,23 +1,172 @@
 body {
-    background-color: gray;
-    margin-right: 250px;
-    margin-left: 250px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
 }
 
-/* header */
-#nav {
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
 }
 
-#nav2 {
+.nav2 {
     display: flex;
     gap: 10px;
 }
 
-#title {
+.title {
+    text-align: center;
+    padding: 40px;
+}
+
+.desc {
+    margin-top: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.content1 {
+    width: 550px ;
+    height: max-content;
+}
+
+#imguk {
+    width: 550px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.inter1 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#user {
+    padding: 30px;
+}
+
+.content2 {
+    width: 300px;
+    height: max-content;
+    background-color: #eaeaea;
+    border: 1 px solid grey;
+    border-radius: 10px;;
+}
+
+.contact {
+    padding: 30px;
+}
+
+.form {
+    width: 100%;
+}
+
+.input {
+    display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	&+.input {
+		margin-top: 1.5rem;}
+}
+
+.input-label {
+	color: #000000;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
+}
+
+.input-field {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid black; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	&:focus, &:valid {
+		outline: 0;
+		border-bottom-color: #000000;
+		&+.input-label {
+			color: #000000;
+			transform: translateY(-1.5rem);
+		}
+	}
+}
+
+.action {
+    margin-top: 1.5rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2rem;
+    background-color: rgb(41, 41, 49);
+    border: 0;
+    border-radius: 5px;
+    color: #eaeaea;
+    cursor: pointer;
+}
+
+.select{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+    margin-top: 1.5rem;
+}
+
+.select2 {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    color: black;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+option {
+    color: inherit;
+    background-color:darkgray;
+  }
+  /* Remove focus outline */
+  &:focus {
+    outline: none;
+  }
+  /* Remove IE arrow */
+  &::-ms-expand {
+    display: none;
+  }
+
+.package {
+    text-align: center;
+    background-color: grey;
+    padding: 40px;
+}
+
+.coloumn {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    border: 1px solid blue;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    padding: 50px;
 }
